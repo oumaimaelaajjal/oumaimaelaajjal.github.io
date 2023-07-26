@@ -1,43 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web Animée</title>
-    <style>
-        /* CSS pour la mise en page et l'apparence */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .animation-container {
-            width: 200px;
-            height: 200px;
-            background-color: #3498db;
-            position: relative;
-            animation: moveAnimation 2s infinite;
-        }
-        @keyframes moveAnimation {
-            0% { top: 0; }
-            50% { top: 200px; }
-            100% { top: 0; }
-        }
-    </style>
+    <title>Master Management Système d'Information</title>
 </head>
-<body>
-    <h1>Ma Page Web Animée</h1>
-    <div class="animation-container"></div>
-    
+<body style="background-color: black;">
+    <div style="background-color: #3498db; padding: 20px; color: white;">
+        <h1>Master Management Système d'Information</h1>
+    </div>
+
+    <div style="background-color: #ffea02; padding: 10px;">
+        <h2>Tableaux de bord</h2>
+        <p>Ici, vous pouvez consulter les tableaux de bord pour suivre les performances et les progrès du programme de Master en Management Système d'Information.</p>
+    </div>
+
+    <div style="background-color: #000000; padding: 10px;">
+        <button onclick="showWelcomeText()">Accueil</button>
+        <button onclick="showModulesDocument()">Modules</button>
+        <button onclick="openChatGPT()">CHAT GPT</button>
+        <a href="https://www.instagram.com/nait_aziiz/" style="background-color: red; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Contactez-nous</a>
+    </div>
+
+    <div id="welcomeText" style="display: none; background-color: #101e27; padding: 20px; color: white;">
+        <p>bienvenu   مرحبا بكم</p>
+    </div>
+
+    <div id="modulesDocument" style="display: none; background-color: #4e3e48; padding: 10px; color: white;">
+        <h2>Master Management Système d'Information</h2>
+        <p> le "Master Management Système d'Information" est un programme d'études de niveau post-gradué axé sur la gestion et l'optimisation des systèmes d'information dans les entreprises et les organisations.
+
+            Ce cursus de Master vise à former des professionnels capables de comprendre les enjeux liés aux technologies de l'information et de la communication au sein d'une organisation. Les étudiants développent des compétences en gestion, en analyse, en conception et en mise en œuvre des systèmes d'information.
+            
+            Les principaux objectifs du programme incluent :
+            
+            Gestion des systèmes d'information : Les étudiants apprennent à gérer les ressources informatiques d'une organisation de manière efficace, en alignant les objectifs stratégiques avec les technologies appropriées.
+            
+            Analyse des besoins : Les étudiants acquièrent des compétences pour comprendre et analyser les besoins en matière de systèmes d'information des différentes parties prenantes d'une entreprise.
+            
+            Conception et développement : Les étudiants sont formés à concevoir et à développer des solutions informatiques adaptées pour répondre aux besoins identifiés.
+            
+            Sécurité et gestion des risques : La sécurité des données et des systèmes est un aspect crucial du Master Management Système d'Information, où les étudiants apprennent à gérer les risques liés à la gestion des données et des technologies.
+            
+            Gestion de projets informatiques : Les compétences en gestion de projet sont essentielles pour assurer la mise en œuvre réussie des systèmes d'information, et elles sont donc également abordées dans le programme.
+            
+            Veille technologique : Les étudiants sont tenus au courant des dernières tendances technologiques, car le domaine de l'informatique évolue rapidement.</p>
+        <p>...</p>
+        <!-- Ajoutez le reste du contenu du document ici -->
+    </div>
+
     <script>
-        // JavaScript pour l'interactivité
-        // Par exemple, si vous souhaitez ajouter une animation supplémentaire lorsque l'utilisateur clique sur l'élément.
-        const animationElement = document.querySelector('.animation-container');
-        
-        animationElement.addEventListener('click', function() {
-            this.style.animation = 'rotateAnimation 1s ease-in-out';
-            // Définissez les règles de l'animation "rotateAnimation" dans votre CSS
-        });
+        function showWelcomeText() {
+            document.getElementById("welcomeText").style.display = "block";
+            document.getElementById("modulesDocument").style.display = "none";
+        }
+
+        function showModulesDocument() {
+            document.getElementById("welcomeText").style.display = "none";
+            document.getElementById("modulesDocument").style.display = "block";
+        }
+
+        function openChatGPT() {
+            alert("Boîte de dialogue AI : قريبا chatGpt 4  هنا و بالمجان !");
+        }
     </script>
 </body>
 </html>
-                    
