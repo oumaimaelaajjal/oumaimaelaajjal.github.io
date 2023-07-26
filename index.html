@@ -1,78 +1,42 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau de Bord - Couleurs Marocaines</title>
+    <title>Ma Page Web Animée</title>
     <style>
+        /* CSS pour la mise en page et l'apparence */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f3f3f3;
-        }
-        header {
-            background-color: #0072a3;
-            color: #fff;
-            padding: 10px;
             text-align: center;
         }
-        nav {
-            background-color: #136c9b;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
+        .animation-container {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveAnimation 2s infinite;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        main {
-            background-color: #fff;
-            padding: 20px;
-            border: 2px solid #0072a3;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #136c9b;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
+        @keyframes moveAnimation {
+            0% { top: 0; }
+            50% { top: 200px; }
+            100% { top: 0; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Tableau de Bord - Couleurs Marocaines</h1>
-    </header>
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Profil</a>
-        <a href="#">Paramètres</a>
-        <a href="#">Déconnexion</a>
-    </nav>
-    <main>
-        <h2>Bienvenue sur votre tableau de bord</h2>
-        <p>
-           ﴿ اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ ﴾
-[ البقرة: 255]
-
-        </p>
-        <p>
-           ترجمة آية الكرسي بالانجليزية
-Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep.
-To Him belongs whatever is in the heavens and whatever is on the earth.
-Who is it that can intercede with Him except by His permission?
-He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills.
-His Kursi extends over the heavens and the earth, and their preservation tires Him not.
-And He is the Most High, the Most Great.
-        </p>
-    </main>
-    <footer>
-        <p>Tous droits réservés &copy; 2023 - Tableau de Bord</p>
-    </footer>
+    <h1>Ma Page Web Animée</h1>
+    <div class="animation-container"></div>
+    
+    <script>
+        // JavaScript pour l'interactivité
+        // Par exemple, si vous souhaitez ajouter une animation supplémentaire lorsque l'utilisateur clique sur l'élément.
+        const animationElement = document.querySelector('.animation-container');
+        
+        animationElement.addEventListener('click', function() {
+            this.style.animation = 'rotateAnimation 1s ease-in-out';
+            // Définissez les règles de l'animation "rotateAnimation" dans votre CSS
+        });
+    </script>
 </body>
 </html>
